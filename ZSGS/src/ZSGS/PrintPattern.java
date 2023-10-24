@@ -6,7 +6,7 @@ public class PrintPattern {
 	public static void printPattern(String str) {
 		for(int i=0;i<str.length();i++) {
 			for(int j=0;j<str.length();j++) {
-				if(i==j || str.length()==i+j) {
+				if(i==j || str.length()-1==i+j) {
 					System.out.print(str.charAt(j));
 				}else {
 					System.out.print(" ");
